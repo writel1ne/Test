@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveForward : MonoBehaviour
+public class MoverForward : MonoBehaviour
 {
     [SerializeField, Range(0, 10)] private float _speed = 0.1f;
 

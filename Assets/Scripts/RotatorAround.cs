@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateAround : MonoBehaviour
+public class RotatorAround : MonoBehaviour
 {
 	[SerializeField, Range(0, 100)] private float _rotationOffset = 0.1f;
 
