@@ -43,10 +43,6 @@ public class OnClickDivider : MonoBehaviour
 			}
 		}
 	}
-	private void OnDrawGizmos()
-	{
-		Gizmos.DrawRay(_ray.origin, _ray.direction * 100);
-	}
 
 	private void SpawnNewCubes(int amount)
 	{
@@ -77,5 +73,9 @@ public class OnClickDivider : MonoBehaviour
 			rb.AddForce(explosionForce, ForceMode.Impulse);
 			clone.GetComponent<OnClickDivider>().SetSeparateChance(_divideChancePercent / _divideChanceDivisor);
 		}
+	}
+	private void OnDrawGizmos()
+	{
+		Gizmos.DrawRay(_ray.origin, _ray.direction * 100);
 	}
 }
