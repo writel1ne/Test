@@ -74,6 +74,7 @@ public class OnClickDivider : MonoBehaviour
 			clone.GetComponent<OnClickDivider>().SetSeparateChance(_divideChancePercent / _divideChanceDivisor);
 		}
 	}
+
 	private void OnDrawGizmos()
 	{
 		Gizmos.DrawRay(_ray.origin, _ray.direction * 100);
